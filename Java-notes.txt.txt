@@ -1,3 +1,4 @@
+Java
 
 LENGUAJE TOTALMENTE ORIENTADO A OBJETOS
 LENGUAJE TIPADO 
@@ -28,7 +29,56 @@ https://www.apache.org/dyn/closer.lua/netbeans/netbeans-installers/21/Apache-Net
 --- INTALACION DE JAVA 111 VERSION SI ERROR 
 https://www.oracle.com/es/java/technologies/javase/jdk11-archive-downloads.html
 
+UNA VEZ INSTALADO APACHE 
 
+NEW PROJECTS 
 
-					
+JAVA WITH ANT -> JAVA APLICATION
+
+naming java
+
+packages : minusculas
+
+javaminclass: Primeramayusculasiguientesminuscula
+
+-------------
+hello world java
  
+package mysource;
+
+public class Principal {
+/*Main es el método o (función)main es el método principal y es el punto e entrada de toda la aplicación como el main.jsx */ 
+    public static void main(String[] args) {
+      System.out.println("HELLO WORLD");
+      /*console.log*/
+    }
+    
+}
+
+tipos de datos en java 
+
+ENTERO: int short long byte 
+
+int number = 5;
+
+Real o punto flotante = decimales: FLoat, double // es mas eficiente ya que limita el numero de datos que permite que ocumpa en la memoria)
+
+float note = 6.5f; 
+
+double note = 6.5; //
+
+CADENA: string (clase = tambien tipo de dato)
+
+String name = "Triana";
+
+Caracter: char
+ - SOLO UNA LETRA -
+char sex = 'M'
+
+Logico: Boolean 
+
+boolean maried = true; 
+
+--------------> solo string va en mayuscula 
+
+ya que es el unico que es una clase y tipo de dato a la vez 
