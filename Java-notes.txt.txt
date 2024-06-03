@@ -1,0 +1,35 @@
+Java
+
+LENGUAJE TOTALMENTE ORIENTADO A OBJETOS
+LENGUAJE TIPADO 
+COMPILADO + INTERPRETADO 
+BUSCAR: JSK ORACLE 8
+
+DESCARGAR COMPILADOR JDK ORACLE 8 (https://www.oracle.com/es/java/technologies/javase/javase8-archive-downloads.html)
+\\Desktop-govjmpv\compartir
+
+C
+								windows linux mac
+Programa.c ---> compilarlo ---> Programa.exe---> resultado   -> no es multiplataaforma, es decir no será interpretado por todos los procesadores, necesitando un interprete para cada procesador, compilar cada una de las veces) 
+(Fuente) 
+
+JAVA 
+
+fases: 
+1 escribo el programa
+2 lo compilo 
+3 va a dar lugar a un archivo que 
+	jdk1.8 -> bin	(compilador = javac.exe)			(interprete= java.exe)
+Programa.java ---> compilarlo ---> Programa.class ----> solo necesitamos tener instalado el interpretar el codigo,que nos permite que nuestro codigo sea interpretado por todos los procesadores ---> resultado 
+  (Fuente)     			      (Bytecode)
+
+
+---------------------
+
+IDE = 	INTERFAZ DE DESARROLLO 
+
+JAVA = ECLIPSE, APACHE NETBEANS, VISUAL STUDIO CODE 
+¿quiero desarrollar con java? 
+
+					
+ 
