@@ -1,4 +1,3 @@
-Java
 
 LENGUAJE TOTALMENTE ORIENTADO A OBJETOS
 LENGUAJE TIPADO 
@@ -10,7 +9,7 @@ DESCARGAR COMPILADOR JDK ORACLE 8 (https://www.oracle.com/es/java/technologies/j
 
 C
 								windows linux mac
-Programa.c ---> compilarlo ---> Programa.exe---> resultado   -> no es multiplataaforma, es decir no será interpretado por todos los procesadores, necesitando un interprete para cada procesador, compilar cada una de las veces) 
+Programa.c ---> compilarlo ---> Programa.exe---> resultado   -> no es multiplataaforma, es decir no será interpretado por todos los procesadores, necesitando un interprete para cada procesador) 
 (Fuente) 
 
 JAVA 
@@ -19,17 +18,17 @@ fases:
 1 escribo el programa
 2 lo compilo 
 3 va a dar lugar a un archivo que 
-	jdk1.8 -> bin	(compilador = javac.exe)			(interprete= java.exe)
-Programa.java ---> compilarlo ---> Programa.class ----> solo necesitamos tener instalado el interpretar el codigo,que nos permite que nuestro codigo sea interpretado por todos los procesadores ---> resultado 
+	
+Programa.java ---> compilarlo ---> Programa.class ----> interpretar el codigo,que nos permite que nuestro codigo sea interpretado por todos los procesadores ---> resultado 
   (Fuente)     			      (Bytecode)
 
+--- INSTALACION DE APACHE 
+https://www.apache.org/dyn/closer.lua/netbeans/netbeans-installers/21/Apache-NetBeans-21-bin-windows-x64.exe
 
----------------------
+--- INTALACION DE JAVA 111 VERSION SI ERROR 
+https://www.oracle.com/es/java/technologies/javase/jdk11-archive-downloads.html
 
-IDE = 	INTERFAZ DE DESARROLLO 
 
-JAVA = ECLIPSE, APACHE NETBEANS, VISUAL STUDIO CODE 
-¿quiero desarrollar con java? 
 
 					
  
