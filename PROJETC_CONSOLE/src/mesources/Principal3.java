@@ -7,10 +7,10 @@ public class Principal3 {
           //convertimos a cadena de texto
           
           String sbinario = String.valueOf(binario);//"100101"
-          int decimal = Integer.parseInt(sbinario.charAt(0)+"") * (int)Math.pow(2,5);
-          int decima2 = Integer.parseInt(sbinario.charAt(3)+ "") * (int)Math.pow(2,2);
-          int decima3 = Integer.parseInt(sbinario.charAt(5)+ "") * (int)Math.pow(2,0);
-            System.out.println("Resultado: " + (decimal+decima2+decima3));
+          int decimal0 = Integer.parseInt(sbinario.charAt(0)+"") * (int)Math.pow(2,5);
+          int decimal2 = Integer.parseInt(sbinario.charAt(3)+ "") * (int)Math.pow(2,2);
+          int decimal3 = Integer.parseInt(sbinario.charAt(5)+ "") * (int)Math.pow(2,0);
+            System.out.println("Resultado: " + (decimal0+decimal2+decimal3));
     }
     
 }
