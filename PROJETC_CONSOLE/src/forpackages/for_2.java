@@ -25,8 +25,7 @@ public class for_2 {
         }
         System.out.println("CUANTAS VOCALES EN EL TEXTO?");
         String patron ="[AEIOU]";
-                int contador = 0;
-        
+                int contador = 0;      
         for(int i = 0; i < longitud; i++) {
             if (String.valueOf(texto.charAt(i)).matches(patron)) {
                 contador++;
