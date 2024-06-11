@@ -15,6 +15,24 @@ public class for_2 {
                 c=0;
             }
         }
+        System.out.println();
+        System.out.println("RECORRER CADENA EN UN PUERTO ITALIANO");
+        String texto = "EN UN PUERTO ITALIANO";
+        int longitud = texto.length();
+        
+        for(int i=0; i<longitud; i++){
+            System.out.print(texto.charAt(i)+ "");
+        }
+        System.out.println("CUANTAS VOCALES EN EL TEXTO?");
+        String patron ="[AEIOU]";
+                int contador = 0;
+        
+        for(int i = 0; i < longitud; i++) {
+            if (String.valueOf(texto.charAt(i)).matches(patron)) {
+                contador++;
+            }
+        }
+        System.out.println("Número de vocales en el texto: " + contador);    
     }
     public static float redondear (float numero){
     return (float)(Math.round(numero*100.00)/100.00);
