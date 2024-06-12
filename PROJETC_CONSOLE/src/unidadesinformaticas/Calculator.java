@@ -44,7 +44,7 @@ public class Calculator {
             }
             
             // Imprimir resultado
-            System.out.println(String.format("%.4f", cantidadConvertida) + " " + unidades[i]);
+            System.out.println(String.format("%.40f", cantidadConvertida) + " " + unidades[i]);
         }
     }
 }
