@@ -6,7 +6,7 @@ public class Trianguloarea {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-       double base, altura, area;
+       double base, altura;
        
        System.out.print("Ingresa base");
             base = sc.nextDouble();
@@ -14,7 +14,11 @@ public class Trianguloarea {
             altura = sc.nextDouble();
             
         Triangulo1 triangulo = new Triangulo1(base,altura);
-        System.out.println(triangulo.Areacalculator());        
+        
+        System.out.println(triangulo);
+        System.out.println(triangulo.Areacalculator());
+        triangulo.setAltura(10);
+        System.out.print(triangulo);
     }
 
 }

@@ -44,4 +44,13 @@ public class Triangulo1 {
     public double Areacalculator() {
         return this.base * this.altura / 2;
     }
+    
+    public static void cabezera (){
+        System.out.printf("%5s %6s %6s %15s\n","ID","BASE","ALTURA","AREA");
+        System.out.printf("%5s %6s %6s %15s\n","--","----","------","----");
+    }
+    
+    public void cuerpo (int i){
+        System.out.printf("%5d %6s %6s %15s\n",i,base, altura, Areacalculator());      
+    }
 }
