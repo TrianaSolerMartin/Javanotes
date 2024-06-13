@@ -10,7 +10,6 @@ public class Principal {
                 //COMO IMPRIMIR LASLTRAS DEL ALFABETO
                 for(int i=65; i<=90; i++) {
                     System.out.println((char)i);
-                }
-                    
+                }                    
     }
 }
