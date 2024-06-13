@@ -14,13 +14,11 @@ public class Calculadora {
         for (int i = 0; i < vector.length; i++) {
             System.out.println("(" + (i + 1) + ") " + vector[i]);
         }
-        
         // Solicitar al usuario elegir una operación
         int opcion;
         do {
             System.out.print("Ingrese un número del 1 al " + vector.length + ": ");
             opcion = sc.nextInt();
-            
             // Verificar que la opción ingresada está dentro del rango
             if (opcion < 1 || opcion > vector.length) {
                 System.out.println("Opción inválida. Debe ser un número del 1 al " + vector.length + ".");
