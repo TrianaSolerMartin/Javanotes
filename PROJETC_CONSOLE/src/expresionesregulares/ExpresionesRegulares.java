@@ -3,13 +3,15 @@ package expresionesregulares;
 import java.util.Scanner;
 
 public class ExpresionesRegulares {
+
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         ejemplo1();
         ejemplo2(); // Llamada al segundo método para probar su funcionalidad
+        ejemplo3();
     }
-    
+
     public static void ejemplo1() {
         String cadena;
         String patron = "[0-9]+";
@@ -28,7 +30,7 @@ public class ExpresionesRegulares {
         int numero = Integer.parseInt(cadena);
         System.out.println("Número entero ingresado: " + numero);
     }
-    
+
     public static void ejemplo2() {
         String cadena = "";
         String patron = "\\S+";
@@ -45,5 +47,15 @@ public class ExpresionesRegulares {
 
         // Si llega aquí, la cadena no contiene espacios en blanco
         System.out.println("Cadena ingresada sin espacios en blanco: " + cadena);
+    }
+
+    public static void ejemplo3() {
+        String cadena = "";
+        String patron = "\\s+";//de uno a mas espacios en blanco
+        String cadenaSinEspacios;
+        System.out.print("Ingrese una cadena con espacios en blancojhkhkh: ");
+        cadena = sc.nextLine();
+        cadenaSinEspacios = cadena.replaceAll(patron, " ");
+        System.out.println(cadenaSinEspacios);
     }
 }
