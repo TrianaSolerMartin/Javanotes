@@ -7,9 +7,7 @@ public class ExpresionesRegulares {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        ejemplo1();
-        ejemplo2(); // Llamada al segundo método para probar su funcionalidad
-        ejemplo3();
+        ejemplo9();
     }
 
     public static void ejemplo1() {
@@ -35,7 +33,6 @@ public class ExpresionesRegulares {
         String cadena = "";
         String patron = "\\S+";
         boolean correcto;
-
         do {
             System.out.print("Ingrese una cadena sin espacios en blanco: ");
             cadena = sc.nextLine();
@@ -53,9 +50,25 @@ public class ExpresionesRegulares {
         String cadena = "";
         String patron = "\\s+";//de uno a mas espacios en blanco
         String cadenaSinEspacios;
-        System.out.print("Ingrese una cadena con espacios en blancojhkhkh: ");
+        System.out.print("Ingrese una cadena con espacios en blanco sin preocuparte por cuanto empacios introduces ya que e sustituirá unicaméte por 1: ");
         cadena = sc.nextLine();
         cadenaSinEspacios = cadena.replaceAll(patron, " ");
         System.out.println(cadenaSinEspacios);
     }
+
+    public static void ejemplo9() {
+        String cadena = "";
+        String patron = "(191[6-8]|200[0123])";
+
+        boolean correcto;
+
+        do {
+            System.out.print("ingrese una cadena");
+            cadena = sc.next();
+            correcto = cadena.matches(patron);
+            if (!correcto) 
+                System.out.println("no cumple el patron");
+
+        }while (!correcto);
+    }  
 }
