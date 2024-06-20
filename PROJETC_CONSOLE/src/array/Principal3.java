@@ -3,32 +3,153 @@ package array;
 public class Principal3 {
 
     public static void main(String[] args) {
-        int [][] menero = {
-            {1,2,3,5},
-            {4,5,6,8},
-            {7,8,9,1}            
+        // Enero 2024
+        int[][] menero = {
+            {1, 2, 3, 4, 5, 6, 7},
+            {8, 9, 10, 11, 12, 13, 14},
+            {15, 16, 17, 18, 19, 20, 21},
+            {22, 23, 24, 25, 26, 27, 28},
+            {29, 30, 31, 0, 0, 0, 0}
         };
-        int [][] mfebrero = {
-            {7,8,9,3},
-            {4,5,8,9},
-            {1,2,3,1}
+
+        // Febrero 2024
+        int[][] mfebrero = {
+            {0, 0, 0, 1, 2, 3, 4},
+            {5, 6, 7, 8, 9, 10, 11},
+            {12, 13, 14, 15, 16, 17, 18},
+            {19, 20, 21, 22, 23, 24, 25},
+            {26, 27, 28, 29, 0, 0, 0}
         };
-        int [][][] cubo = new int [2][3][4];//matriz, fila,columna
-        cubo [0] = menero;
-        cubo [1] = mfebrero;
-        
-        for (int i=0; i<cubo.length; i++){
-            for (int j=0; j<cubo[0].length; j++){
-                for (int k=0; k<cubo[0][0].length; k++) {
-                        System.out.printf("%4d",cubo[i][j][k]);
+
+        // Marzo 2024
+        int[][] mmarzo = {
+            {0, 0, 0, 0, 1, 2, 3},
+            {4, 5, 6, 7, 8, 9, 10},
+            {11, 12, 13, 14, 15, 16, 17},
+            {18, 19, 20, 21, 22, 23, 24},
+            {25, 26, 27, 28, 29, 30, 31}
+        };
+
+        // Abril 2024
+        int[][] mabril = {
+            {1, 2, 3, 4, 5, 6, 7},
+            {8, 9, 10, 11, 12, 13, 14},
+            {15, 16, 17, 18, 19, 20, 21},
+            {22, 23, 24, 25, 26, 27, 28},
+            {29, 30, 0, 0, 0, 0, 0}
+        };
+
+        // Mayo 2024
+        int[][] mmayo = {
+            {0, 0, 1, 2, 3, 4, 5},
+            {6, 7, 8, 9, 10, 11, 12},
+            {13, 14, 15, 16, 17, 18, 19},
+            {20, 21, 22, 23, 24, 25, 26},
+            {27, 28, 29, 30, 31, 0, 0}
+        };
+
+        // Junio 2024
+        int[][] mjunio = {
+            {0, 0, 0, 0, 0, 1, 2},
+            {3, 4, 5, 6, 7, 8, 9},
+            {10, 11, 12, 13, 14, 15, 16},
+            {17, 18, 19, 20, 21, 22, 23},
+            {24, 25, 26, 27, 28, 29, 30}
+        };
+
+        // Julio 2024
+        int[][] mjulio = {
+            {1, 2, 3, 4, 5, 6, 7},
+            {8, 9, 10, 11, 12, 13, 14},
+            {15, 16, 17, 18, 19, 20, 21},
+            {22, 23, 24, 25, 26, 27, 28},
+            {29, 30, 31, 0, 0, 0, 0}
+        };
+
+        // Agosto 2024
+        int[][] magosto = {
+            {0, 0, 0, 1, 2, 3, 4},
+            {5, 6, 7, 8, 9, 10, 11},
+            {12, 13, 14, 15, 16, 17, 18},
+            {19, 20, 21, 22, 23, 24, 25},
+            {26, 27, 28, 29, 30, 31, 0}
+        };
+
+        // Septiembre 2024
+        int[][] mseptiembre = {
+            {0, 0, 0, 0, 0, 0, 1},
+            {2, 3, 4, 5, 6, 7, 8},
+            {9, 10, 11, 12, 13, 14, 15},
+            {16, 17, 18, 19, 20, 21, 22},
+            {23, 24, 25, 26, 27, 28, 29},
+            {30, 0, 0, 0, 0, 0, 0}
+        };
+
+        // Octubre 2024
+        int[][] moctubre = {
+            {0, 0, 1, 2, 3, 4, 5},
+            {6, 7, 8, 9, 10, 11, 12},
+            {13, 14, 15, 16, 17, 18, 19},
+            {20, 21, 22, 23, 24, 25, 26},
+            {27, 28, 29, 30, 31, 0, 0}
+        };
+
+        // Noviembre 2024
+        int[][] mnoviembre = {
+            {0, 0, 0, 0, 1, 2, 3},
+            {4, 5, 6, 7, 8, 9, 10},
+            {11, 12, 13, 14, 15, 16, 17},
+            {18, 19, 20, 21, 22, 23, 24},
+            {25, 26, 27, 28, 29, 30, 0}
+        };
+
+        // Diciembre 2024
+        int[][] mdiciembre = {
+            {0, 0, 0, 0, 0, 0, 1},
+            {2, 3, 4, 5, 6, 7, 8},
+            {9, 10, 11, 12, 13, 14, 15},
+            {16, 17, 18, 19, 20, 21, 22},
+            {23, 24, 25, 26, 27, 28, 29},
+            {30, 31, 0, 0, 0, 0, 0}
+        };
+
+        // Array tridimensional que contiene todos los meses
+        int[][][] cubo = new int[12][][];
+
+        cubo[0] = menero;
+        cubo[1] = mfebrero;
+        cubo[2] = mmarzo;
+        cubo[3] = mabril;
+        cubo[4] = mmayo;
+        cubo[5] = mjunio;
+        cubo[6] = mjulio;
+        cubo[7] = magosto;
+        cubo[8] = mseptiembre;
+        cubo[9] = moctubre;
+        cubo[10] = mnoviembre;
+        cubo[11] = mdiciembre;
+
+        // Array de nombres de los meses
+        String[] meses = {
+            "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+            "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        };
+
+        // Imprimir el calendario anual
+        for (int i = 0; i < cubo.length; i++) {
+            System.out.println(meses[i]);
+            System.out.println("Lun Mar Mie Jue Vie Sab Dom");
+            for (int j = 0; j < cubo[i].length; j++) {
+                for (int k = 0; k < cubo[i][j].length; k++) {
+                    if (cubo[i][j][k] == 0) {
+                        System.out.printf("    "); // Espacio para días vacíos
+                    } else {
+                        System.out.printf("%4d", cubo[i][j][k]);
+                    }
                 }
                 System.out.println();
-                    }
-                            System.out.println();
-
-        
-            
+            }
+            System.out.println();
         }
     }
-
 }
