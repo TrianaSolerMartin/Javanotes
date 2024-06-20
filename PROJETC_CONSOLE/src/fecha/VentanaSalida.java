@@ -31,18 +31,21 @@ public class VentanaSalida extends JFrame {
         this.setVisible(true);//que se muestre la ventana 
     }
     
+    public JTextArea getTextArea(){
+        return this.txaContenido;
+    }
+    
     public static void main (String[]arg){
     VentanaSalida vs = new VentanaSalida();
     }
     
     public void personalizarTextArea (){
     txaContenido.setBackground(Color.pink);
-    txaContenido.setFont(new Font("Courier New", Font.BOLD, 14));
+    txaContenido.setFont(new Font("Courier New", Font.BOLD, 20));
     txaContenido.setForeground(Color.black);
     
     scrollpane.setViewportView(txaContenido);//poner scroll en textarea
     
     contenedor.add(scrollpane);
             }
-    
 }
