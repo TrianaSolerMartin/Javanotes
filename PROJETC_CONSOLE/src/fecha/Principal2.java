@@ -8,12 +8,12 @@ public class Principal2 {
 
     public static void main(String[] args) {
         String s;
-        VentanaSalida vs = new VentanaSalida();
-        JTextArea txaContenido = vs.getTextArea();
 
         String[] dias = {"L", "M", "X", "J", "V", "S", "D"};
         String[] meses = {"ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"};
         for (int mes = 1; mes <= 12; mes++) {
+            VentanaSalida vs = new VentanaSalida();
+            JTextArea txaContenido = vs.getTextArea();
             int[][] matrizmes = new int[6][7];
             int diaSemana = obtenerDiaSemanaPrimerDiaMesNumero(mes, 2024);
             int numeroDias = obtenerNumeroDiasMes(mes, 2024);
@@ -24,7 +24,7 @@ public class Principal2 {
             System.out.printf("%4s %4s %4s %4s %4s %4s %4s\n", dias);
 
             //ipresion en ventana
-            s = String.format("   " + meses[mes - 1]);
+            s = String.format("   " + meses[mes - 1] + "\n");
             txaContenido.append(s);
             s = String.format("%4s %4s %4s %4s %4s %4s %4s\n", dias);
             System.out.println();
@@ -55,7 +55,7 @@ public class Principal2 {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[0].length; j++) {
                 System.out.printf("%4d ", matriz[i][j]);
-                s = String.format("%4d", matriz[i][j]);
+                s = String.format("%4d ", matriz[i][j]);
                 txaContenido.append(s);
             }
             System.out.println();
