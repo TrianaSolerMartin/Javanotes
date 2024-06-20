@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package fecha;
 
-/**
- *
- * @author Administrator
- */
-public class VentanaSalida {
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+public class VentanaSalida extends JFrame {
+    JTextArea txaContenido = new JTextArea();
+    
     
 }
