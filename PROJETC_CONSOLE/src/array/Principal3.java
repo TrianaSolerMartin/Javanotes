@@ -150,6 +150,7 @@ public class Principal3 {
                 }
                 System.out.println();
             }
+            
             System.out.println();
         }
     }

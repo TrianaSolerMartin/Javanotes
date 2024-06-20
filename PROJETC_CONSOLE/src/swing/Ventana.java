@@ -253,7 +253,7 @@ double resultado = numero1 + numero2;
                 new Ventana().setVisible(true);
             }
         });
-    }º
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
