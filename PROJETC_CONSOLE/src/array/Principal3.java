@@ -134,17 +134,18 @@ public class Principal3 {
             "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
             "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
         };
+         String[] diasSemana  = {"L", "M", "X","J","V","S","D"};
 
         // Imprimir el calendario anual
         for (int i = 0; i < cubo.length; i++) {
             System.out.println(meses[i]);
-            System.out.println("Lun Mar Mie Jue Vie Sab Dom");
+               System.out.printf("%7s %7s %7s %7s %7s %7s %7s\n ", diasSemana);
             for (int j = 0; j < cubo[i].length; j++) {
                 for (int k = 0; k < cubo[i][j].length; k++) {
                     if (cubo[i][j][k] == 0) {
-                        System.out.printf("    "); // Espacio para días vacíos
+                        System.out.printf("%7d ",  cubo[i][j][k] ); // Espacio para días vacíos
                     } else {
-                        System.out.printf("%4d", cubo[i][j][k]);
+                        System.out.printf("%7d ", cubo[i][j][k]);
                     }
                 }
                 System.out.println();
