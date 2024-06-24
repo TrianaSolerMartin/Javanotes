@@ -1,5 +1,6 @@
-package fecha;
+package mariadb;
 
+import fecha.*;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
@@ -16,7 +17,7 @@ public class VentanaSalida extends JFrame {
     JScrollPane scrollpane = new JScrollPane();
 
 
-    public VentanaSalida() {
+    public VentanaSalida(String mysql) {
         personalizarVentana();
         personalizarTextArea();
     }
@@ -37,7 +38,7 @@ public class VentanaSalida extends JFrame {
     }
     
     public static void main (String[]arg){
-    VentanaSalida vs = new VentanaSalida();
+    VentanaSalida vs = new VentanaSalida("MYSQL");
     }
     
     public void personalizarTextArea (){
