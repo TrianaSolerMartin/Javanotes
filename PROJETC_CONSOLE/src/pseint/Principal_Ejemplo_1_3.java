@@ -28,5 +28,5 @@ public class Principal_Ejemplo_1_3 {
         Ejemplo_1_3 objeto = new Ejemplo_1_3();
         objeto.entrada();
         objeto.imprimirResultado();
-                }
+    }
 }
