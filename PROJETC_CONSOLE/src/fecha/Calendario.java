@@ -1,4 +1,4 @@
-package fecha;
+package proyecto_calendario;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
