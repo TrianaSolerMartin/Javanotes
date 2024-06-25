@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Principal_Ejemplo_1_3 {
 
     public static void main(String[] args) {
-        versionEstructurada();
+        versionPOO1();
     }
 
     public static void versionEstructurada() {
@@ -24,7 +24,9 @@ public class Principal_Ejemplo_1_3 {
         System.out.printf("Resultado: %.2f", r);
     }
 
-    public void versionPOO1() {
-
-    }
+    public static void versionPOO1() {
+        Ejemplo_1_3 objeto = new Ejemplo_1_3();
+        objeto.entrada();
+        objeto.imprimirResultado();
+                }
 }
