@@ -16,6 +16,7 @@ public class VentanaOutput extends JFrame {
     }
 
     public static void main(String[] args) {
-
+       VentanaOutput vo = new VentanaOutput();
+       vo.setVisible(true);
     }
 }
