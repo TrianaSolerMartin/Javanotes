@@ -76,31 +76,50 @@ public class Alumno {
     public String toString() {
         return "Alumno{" + "idAlumno=" + idAlumno + ", nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", asignaturas_al=" + asignaturas_al + '}';
     }
+    
+    public static String cabecera() {
+        String c = String.format("  %-2s %-6s %-8s\n","ID","NOMBRE","APELLIDO");
+        return c;
+    }
+    
+    public static String subrrayadoCabecera() {
+        String c = String.format("  %-2s %-6s %-8s\n","--","------","--------");
+        return c;
+    }    
+    
+    public String cuerpo() {
+        String c = String.format("  %-2s %-6s %-8s\n",idAlumno,nombre,apellido); 
+        return c;        
+    }
 
     //OTROS METODOS
-    public void entrada(List<Alumno>alumnos_al) {
+    public void entrada(List<Alumno> alumnos_al) {
         Scanner sc = new Scanner(System.in);
         List<String> aux_al = new ArrayList<>();
         System.out.print("INGRESAR IDALUMNO?");
         idAlumno = sc.next();
         if (!Util.existeIdAlumno(idAlumno, alumnos_al)) {
+            
             System.out.print("INGRESAR NOMMBRE?");
             nombre = sc.next();
             System.out.print("INGRESAR APELLIDO?");
             apellido = sc.next();
-            System.out.print("INGRESAR EDAD?");
-            edad = sc.nextInt();
-            System.out.print("CUANTAS ASIGNATURAS DESEA INGRESAR?");
-            int n = sc.nextInt();
+            
+            edad = Util.leerEdad();
+            int n = Util.leerNumeroAsignatura();
+            
             for (int i = 0; i < n; i++) {
                 System.out.println("INGRESE ASIGNATURA? ");
                 aux_al.add(sc.next());
             }
             asignaturas_al = aux_al;
+            
+            Alumno alumno = new Alumno(idAlumno,nombre,apellido,edad,asignaturas_al);
+            alumnos_al.add(alumno); //Guardar en la base de datos
+            System.out.println("OK: ALUMNO SE AÑADIO CORRECTAMENTE");
         } else {
-            System.out.println("Error alumno existe");
+            System.out.println("ERROR: ALUMNO YA EXISTE");
         }
-        
-    
-}
+    }
+
 }
