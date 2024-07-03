@@ -21,7 +21,7 @@ public class VentanaSalida extends JFrame {
     
     // CONSTRUCTORES
     
-    public VentanaSalida(String titulo) {
+    public VentanaSalida() {
        this.titulo = titulo;
        personalizarVentana(); 
        personalizarTextArea();
