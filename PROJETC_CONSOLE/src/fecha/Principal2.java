@@ -12,7 +12,7 @@ public class Principal2 {
         String[] dias = {"L", "M", "X", "J", "V", "S", "D"};
         String[] meses = {"ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"};
         for (int mes = 1; mes <= 12; mes++) {
-            VentanaSalida vs = new VentanaSalida();
+            final VentanaSalida vs = new VentanaSalida();
             JTextArea txaContenido = vs.getTextArea();
             int[][] matrizmes = new int[6][7];
             int diaSemana = obtenerDiaSemanaPrimerDiaMesNumero(mes, 2024);
