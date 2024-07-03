@@ -32,9 +32,23 @@ public class VentanaBuscarAlumno extends javax.swing.JFrame {
         asignaturas1_al.add("Física");
 
         Alumno alumno1 = new Alumno("A2", "Luis", "Lescano", 17, asignaturas1_al);
+        Alumno alumno2 = new Alumno("A3", "Antonio", "Lopez", 17, asignaturas1_al);
+        Alumno alumno3 = new Alumno("A4", "Maria", "Martín", 35, asignaturas1_al);
+        Alumno alumno4 = new Alumno("A5", "Elisa", "Enfant", 93, asignaturas1_al);
+        Alumno alumno5 = new Alumno("A6", "Julian", "Soler", 40, asignaturas1_al);
+        Alumno alumno6 = new Alumno("A7", "Julian", "Uzumaki", 34, asignaturas1_al);
+        Alumno alumno7 = new Alumno("A8", "Julian", "Entiria", 9, asignaturas1_al);
+        Alumno alumno8 = new Alumno("A9", "Julian", "Martinez", 40, asignaturas1_al);
 
         alumnos_al.add(alumno);
         alumnos_al.add(alumno1);
+        alumnos_al.add(alumno2);
+        alumnos_al.add(alumno3);
+        alumnos_al.add(alumno4);
+        alumnos_al.add(alumno5);
+        alumnos_al.add(alumno6);
+        alumnos_al.add(alumno7);
+        alumnos_al.add(alumno8);
     }
 
     public void personalizarVentana() {
@@ -327,7 +341,7 @@ public class VentanaBuscarAlumno extends javax.swing.JFrame {
             for (Alumno a : alumnosaux_al) {
                 //txaMostrar.append(a.toString() + "\n");
                 txaMostrar.append(a.cuerpo());
-                 List<String> asignaturas_al = a.getAsignaturas_al();
+                List<String> asignaturas_al = a.getAsignaturas_al();
                 for (String asi : asignaturas_al) {
                     modeloLista.addElement(asi);
                 }
